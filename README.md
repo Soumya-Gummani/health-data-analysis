@@ -24,3 +24,19 @@ This project focuses on analyzing health-related datasets and building a predict
 1. Clone the repository  
    ```bash
    git clone https://github.com/Soumya-Gummani/health-data-analysis.git
+
+2. Install dependencies
+
+   pip install -r requirements.txt
+
+3. Run the main file
+
+   python main.py
+
+📌 Future Improvements
+Improve model accuracy
+Add a web interface
+Deploy using Flask
+
+👩‍💻 Author
+Soumya Gummani
