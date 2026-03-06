@@ -1,0 +1,63 @@
+{% extends 'adminbase.html' %}
+{% block body %}
+   <!-- Header Start -->
+   <div class="container-fluid page-header" style="margin-bottom: 90px;">
+    <div class="container">
+        <div class="d-flex flex-column justify-content-center" style="min-height: 300px">
+            <h3 class="display-4 text-white text-uppercase">viewprediction</h3>
+            <div class="d-inline-flex text-white">
+                <p class="m-0 text-uppercase"><a class="text-white" href="">Home</a></p>
+                <i class="fa fa-angle-double-right pt-1 px-3"></i>
+                <p class="m-0 text-uppercase">viewprediction</p>
+            </div>
+        </div>
+    </div>
+<div class="container">
+  <br>
+  <br>
+  <br>
+  <br>
+    <h2>View Predictions</h2>
+    <br>
+    <br>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Gender</th>
+          <th>AGE</th>
+          <th>HYPERTENSION</th>
+          <th>HEART DISEASE</th>
+          <th>WORK TYPE</th>
+          <th>RESIDENCE TYPE</th>
+          <th>AVERAGE GLUCOSE LEVEL</th>
+          <th>BODY MASS INDEX</th>
+          <th>LoSMOKING STATUS</th>
+         
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in rows %}
+        <tr>
+          <td>{{row['gender']}}</td>
+          <td>{{row['age']}}</td>
+          <td>{{row['Hypertension']}}</td>
+          <td>{{row['heartdisease']}}</td>
+          <td>{{row['work_type']}}</td>
+          <td>{{row['residencetype']}}</td>
+          <td>{{row['glucoselevel']}}</td>
+          <td>{{row['massindex']}}</td>
+          <td>{{row['smokingstatus']}}</td>
+        </tr>  
+        {% endfor %}    
+        
+      </tbody>
+    </table>
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
+
+</div>
+<!-- Header End -->
+{% endblock %}

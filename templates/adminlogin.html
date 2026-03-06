@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block body %}
+<center>
+<div class="container-fluid bg-registration py-5" style="margin: 90px 0;">
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-5">
+                <div class="card border-0">
+                    <div class="card-header bg-light text-center p-4">
+                        <h1 class="m-0">Admin Login</h1>
+                    </div>
+                    <div class="card-body rounded-bottom bg-primary p-5">
+                        <form action="/adminloginNext" method="POST">
+                            <div class="form-group">
+                                <input type="text" name="ausername" class="form-control border-0 p-4" placeholder="Username" required />
+                            </div>
+                            <div class="form-group">
+                                <input type="password" name="apassword" class="form-control border-0 p-4" placeholder="Password" required />
+                            </div>
+                            <div>
+                                <button class="btn btn-dark btn-block border-0 py-3" type="submit">Submit</button>
+                            </div>
+                            {% if msg %}
+                                <p style="color:red;">{{ msg }}</p>
+                            {% endif %}
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</center>
+{% endblock %}

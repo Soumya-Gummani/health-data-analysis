@@ -1,0 +1,31 @@
+{% extends 'adminbase.html' %}
+
+
+{% block body %}
+<div class="container"><br><br><br><br>
+    
+   <br>
+   <br>
+    <table class="table">
+      <thead>
+        <tr>
+          <th> Name</th>
+          <th>Contact Number</th>
+          <th>UserName</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in rows %}
+        <tr>
+          <td>{{row['uname']}}</td>
+          <td>{{row['uphone']}}</td>
+          <td>{{row['username']}}</td>
+    
+        </tr> 
+        {% endfor %}     
+        
+       
+      </tbody>
+    </table>
+  </div>
+  {% endblock %}  

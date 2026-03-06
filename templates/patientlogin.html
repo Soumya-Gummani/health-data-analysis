@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block body %}
+    <!-- Registration Start -->
+   <center> <div class="container-fluid bg-registration py-5" style="margin: 90px 0;">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                
+                <div class="col-lg-5">
+                    <div class="card border-0">
+                        <div class="card-header bg-light text-center p-4">
+                            <h1 class="m-0">Patient login</h1>
+                        </div>
+                        <div class="card-body rounded-bottom bg-primary p-5">
+                            
+                            <form action="/patientloginNext" method="POST" >
+                                <div class="form-group">
+                                    <input type="email" name="pusername" class="form-control border-0 p-4" placeholder="Your Email" required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" name="ppassword" class="form-control border-0 p-4" placeholder="Password" required="required" />
+                                </div>
+                                <div>
+                                    <button class="btn btn-dark btn-block border-0 py-3" type="submit">Submit</button>
+                                </div>
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div></center>
+    <!-- Registration End -->
+
+{% endblock %}

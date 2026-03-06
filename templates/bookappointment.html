@@ -1,0 +1,45 @@
+{% extends 'patientbase.html' %}
+{% block body %}
+    <!-- Registration Start -->
+   <center> <div class="container-fluid bg-registration py-5" style="margin: 90px 0;">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                
+                <div class="col-lg-5">
+                    <div class="card border-0">
+                        <div class="card-header bg-light text-center p-4">
+                            <h1 class="m-0">Book Appointment</h1>
+                        </div>
+                        <div class="card-body rounded-bottom bg-primary p-5">
+                            <form  action="/bookappointmentNext" method="POST">
+                                <div class="form-group">
+                                    <input type="text" name="pname" class="form-control border-0 p-4" placeholder="Your name" required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="phone" class="form-control border-0 p-4" placeholder="Phone number" required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="specialist" class="form-control border-0 p-4" placeholder="Specialist" required="required" />
+                                </div>
+                               
+                                <div>
+                                    <button class="btn btn-dark btn-block border-0 py-3" type="submit">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                      
+                    </div>
+                    <br>
+                    <center><div class="section-title" >
+                        {% if msg %}
+                       <h4 style="color:rgb(241, 238, 238)">  {{msg}} </h4>
+                        {% endif %}
+                  </div>
+                    </center> 
+                </div>
+            </div>
+        </div>
+    </div></center>
+    <!-- Registration End -->
+
+{% endblock %}

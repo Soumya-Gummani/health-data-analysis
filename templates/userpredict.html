@@ -1,0 +1,140 @@
+{% extends 'userbase.html' %}
+{% block body %}
+    
+    <div class="container-fluid">
+        <div class="col-lg-12">
+                <form action="{{ url_for('result') }}" method="post">
+                    <br>
+                    <br>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="gender">GENDER</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                
+
+                                <select name="gender" id="gender" class="form-control">
+                                    <option>Select</option>
+                                    <option value="0">Female</option>
+                                    <option value="1">Male</option>
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="age">AGE</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input type="text" class="form-control" id="age" name="age" placeholder="ENTER YOUR AGE">
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="hypertension">HYPERTENSION </label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                           
+                                <select name="hypertension" id="hypertension" class="form-control">
+                                    <option>Select</option>
+                                    <option value="0">No</option>
+                                    <option value="1">Yes</option>
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="heart_disease">HEART DISEASE </label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <select name="heart_disease" id="heart_disease" class="form-control">
+                                    <option>Select</option>
+                                    <option value="0">No</option>
+                                    <option value="1">Yes</option>
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="work_type">WORK TYPE </label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+
+                                <select name="work_type" id="work_type" class="form-control">
+                                    <option>Select</option>
+                                    <option value="0">GOVT. JOB</option>
+                                    <option value="1">NEVER WORKED</option>
+                                    <option value="2">PRIVATTE</option>
+                                    <option value="3">SELF EMPLOYED</option>
+                                    <option value="4">CHILDREN</option>
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="Residence_type">RESIDENCE TYPE</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+
+                                <select name="Residence_type" id="Residence_type" class="form-control">
+                                    <option>Select</option>
+                                    <option value="0">RURAL</option>
+                                    <option value="1">URBAN</option>
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="avg_glucose_level">AVERAGE GLUCOSE LEVEL</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input type="text" class="form-control" id="avg_glucose_level" name="avg_glucose_level" placeholder="ENTER VALUE">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="bmi">BODY MASS INDEX</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input type="text" class="form-control" id="bmi" name="bmi" placeholder="ENTER VALUE">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="smoking_status">SMOKING STATUS</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                              
+
+                                <select name="smoking_status" id="smoking_status" class="form-control">
+                                    <option>Select</option>
+                                    <option value="0">UNKNOWN</option>
+                                    <option value="1">SOMETIMES</option>
+                                    <option value="0">NEVER</option>
+                                    <option value="1">REGULAR</option>
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        
+                        <br>
+                        <br>
+                        <center>
+                            <button type="submit" class="btn btn-dark" value="submit">Submit</button>
+                        </center>
+                </form>
+            </div>
+        </div>
+
+
+{% endblock %}
